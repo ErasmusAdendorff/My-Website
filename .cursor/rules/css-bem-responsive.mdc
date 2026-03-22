@@ -1,0 +1,24 @@
+---
+description: CSS structure, BEM, variables, mobile-first responsive layout
+globs: **/*.{html,css}
+alwaysApply: false
+---
+
+# CSS, BEM, and responsive layout
+
+- Use external stylesheets only; no inline styles for presentation.
+- Prefer class selectors; use BEM: `.block`, `.block__element`, `.block--modifier`.
+- Define theme tokens in `:root` (CSS variables); use `rem`/`em` for typography and spacing where practical.
+- Layout with Flexbox and/or Grid; mobile-first `@media` (min-width).
+- Visible `:focus-visible` styles; avoid `!important` unless overriding third-party with no alternative.
+- Touch targets at least ~44×44px for primary interactive controls in navigation and forms.
+
+```css
+/* Avoid */
+#header { color: red !important; }
+
+/* Prefer */
+.site-header {
+  color: var(--color-text);
+}
+```

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My site — home</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="site-body">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-header__brand">
+          <a class="site-header__brand-link" href="index.html">
+            <img
+              class="site-header__logo"
+              src="assets/icons/logo.svg"
+              alt=""
+              width="32"
+              height="32"
+              decoding="async"
+            />
+            My site
+          </a>
+        </p>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#intro">Intro</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#media">Media</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section id="intro" class="site-main__section" aria-labelledby="intro-heading">
+        <h1 id="intro-heading">Welcome</h1>
+        <h2>About this page</h2>
+        <p>
+          This is a semantic, mobile-first scaffold: landmarks, skip link, external CSS with design
+          tokens, and BEM-style class names. Replace this copy with your own content.
+        </p>
+      </section>
+
+      <section id="media" class="site-main__section" aria-labelledby="media-heading">
+        <h2 id="media-heading">Responsive image pattern</h2>
+        <p>
+          Use <code>srcset</code> and <code>sizes</code> when you have multiple resolutions of the
+          same image (export 1x and 2x, or use <code>w</code> descriptors with a single <code>img</code>).
+        </p>
+        <!--
+          Example (uncomment when you have hero-400.webp, hero-800.webp, etc.):
+          <img
+            src="assets/images/hero-400.webp"
+            srcset="
+              assets/images/hero-400.webp 400w,
+              assets/images/hero-800.webp 800w
+            "
+            sizes="(min-width: 48rem) 50vw, 100vw"
+            alt="Describe the image for people who cannot see it"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          />
+        -->
+        <figure class="content-figure">
+          <img
+            class="content-figure__image"
+            src="assets/images/placeholder.svg"
+            alt="Soft blue gradient placeholder block representing a hero image"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="content-figure__caption">
+            Placeholder asset in <code>assets/images/</code>; swap for real art with <code>srcset</code>.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="contact" class="site-main__section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Sample form</h2>
+        <form class="sample-form" action="#" method="get" aria-labelledby="contact-heading">
+          <p class="sample-form__field">
+            <label class="sample-form__label" for="email">Email</label>
+            <input
+              id="email"
+              class="sample-form__input"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </p>
+          <p class="sample-form__actions">
+            <button class="sample-form__submit" type="submit">Send</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__text">© <span id="year"></span> My site. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+---
+description: Semantic HTML, landmarks, and accessibility for static pages
+globs: **/*.{html,css}
+alwaysApply: false
+---
+
+# HTML semantics and accessibility
+
+- Use landmarks: `header`, `nav`, `main`, `footer`; one `h1` per page; logical heading order.
+- Use `<button>` for actions, `<a href="...">` for navigation; every `img` needs `alt` (empty `alt=""` only if decorative).
+- Use `<form>` with associated `<label>` (or `aria-labelledby`) and appropriate `input` types.
+- Include skip link to `#main-content` (or first landmark) and matching `id` on `main`.
+- Set `lang` on `<html>` and viewport meta for responsive scaling.
+- Prefer native HTML semantics over ARIA; add ARIA only when HTML cannot express the role/state (e.g. custom widgets).
+
+```html
+<!-- Avoid -->
+<div onclick="...">Open</div>
+
+<!-- Prefer -->
+<button type="button">Open</button>
+```
