@@ -1,13 +1,22 @@
-/* Raster photos and illustrations: assets/images/ | UI SVG icons: assets/icons/ */
+/* Raster: assets/images/ | UI icons: assets/icons/ | Project thumbs: assets/images/projects/ */
 
 :root {
-  --color-bg: #f8f9fa;
+  --color-brand-primary: #317a90;
+  --color-brand-secondary: #7f8c8f;
+  --color-brand-primary-hover: #265f71;
+  --color-brand-primary-soft: rgb(49 122 144 / 0.12);
+
+  --color-bg: #f4f6f6;
   --color-surface: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #5c5c5c;
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
-  --color-focus-ring: #2563eb;
+  --color-surface-alt: #eef2f2;
+  --color-text: #1c1f20;
+  --color-text-muted: #4a5456;
+
+  --color-accent: var(--color-brand-primary);
+  --color-accent-hover: var(--color-brand-primary-hover);
+  --color-focus-ring: var(--color-brand-primary);
+  --color-border-subtle: rgb(127 140 143 / 0.35);
+  --color-border-light: rgb(0 0 0 / 0.08);
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
 
@@ -17,15 +26,20 @@
   --space-lg: 1.5rem;
   --space-xl: 2rem;
   --space-2xl: 3rem;
+  --space-3xl: 4rem;
 
   --content-max-width: 72rem;
   --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 14px rgb(28 31 32 / 0.08);
+
+  --transition-fast: 0.15s ease;
 }
 
 /*
-  Breakpoint intentions (mobile-first, use in layout/components):
-  - sm ~ 36rem (576px): slightly wider padding, optional two-column hints
-  - md ~ 48rem (768px): header row, wider main column
-  - lg ~ 64rem (1024px): max content width reached comfortably
+  Breakpoints (mobile-first):
+  - md ~ 48rem: header row, hero two columns, wider grids
+  - lg ~ 64rem: comfortable max width
 */

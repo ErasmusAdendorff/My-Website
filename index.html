@@ -3,16 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My site — home</title>
+    <meta
+      name="description"
+      content="Erasmus Adendorff — mechanical engineer and Junior Project Engineer in Bloemfontein. Engineering projects, software, gaming, and electronics. Open to collaboration."
+    />
+    <meta name="theme-color" content="#317a90" />
+    <title>Erasmus Adendorff — Mechanical engineer &amp; Junior Project Engineer</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="site-body">
+    <!-- Projects load via fetch(data/projects.json); use a local HTTP server (e.g. npx serve .) — opening this file as file:// often blocks fetch. -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header">
       <div class="site-header__inner">
         <p class="site-header__brand">
-          <a class="site-header__brand-link" href="index.html">
+          <a class="site-header__brand-link" href="index.html#hero">
             <img
               class="site-header__logo"
               src="assets/icons/logo.svg"
@@ -21,16 +27,25 @@
               height="32"
               decoding="async"
             />
-            My site
+            Erasmus Adendorff
           </a>
         </p>
         <nav class="site-nav" aria-label="Primary">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#intro">Intro</a>
+              <a class="site-nav__link" href="#hero">Home</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#media">Media</a>
+              <a class="site-nav__link" href="#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#experience">Experience</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#interests">Interests</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="#contact">Contact</a>
@@ -41,55 +56,257 @@
     </header>
 
     <main id="main-content" class="site-main">
-      <section id="intro" class="site-main__section" aria-labelledby="intro-heading">
-        <h1 id="intro-heading">Welcome</h1>
-        <h2>About this page</h2>
-        <p>
-          This is a semantic, mobile-first scaffold: landmarks, skip link, external CSS with design
-          tokens, and BEM-style class names. Replace this copy with your own content.
-        </p>
-      </section>
-
-      <section id="media" class="site-main__section" aria-labelledby="media-heading">
-        <h2 id="media-heading">Responsive image pattern</h2>
-        <p>
-          Use <code>srcset</code> and <code>sizes</code> when you have multiple resolutions of the
-          same image (export 1x and 2x, or use <code>w</code> descriptors with a single <code>img</code>).
-        </p>
-        <!--
-          Example (uncomment when you have hero-400.webp, hero-800.webp, etc.):
+      <section id="hero" class="section hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Mechanical engineer</p>
+          <h1 id="hero-title" class="hero__title">Erasmus Adendorff</h1>
+          <p class="hero__subtitle">
+            Junior Project Engineer turning requirements into coordinated delivery—drawings, suppliers, and
+            timelines—while building apps, games, and hardware experiments on the side.
+          </p>
+          <div class="hero__actions">
+            <a class="hero__cta hero__cta--primary" href="#projects">View projects</a>
+            <a class="hero__cta hero__cta--secondary" href="#experience">Work experience</a>
+            <a class="hero__cta hero__cta--secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="hero__media">
           <img
-            src="assets/images/hero-400.webp"
-            srcset="
-              assets/images/hero-400.webp 400w,
-              assets/images/hero-800.webp 800w
-            "
-            sizes="(min-width: 48rem) 50vw, 100vw"
-            alt="Describe the image for people who cannot see it"
-            width="800"
-            height="450"
-            loading="lazy"
+            class="hero__photo"
+            src="assets/images/profile-placeholder.svg"
+            alt="Professional headshot of Erasmus Adendorff—replace this image in assets/images/"
+            width="320"
+            height="320"
+            loading="eager"
             decoding="async"
           />
-        -->
-        <figure class="content-figure">
-          <img
-            class="content-figure__image"
-            src="assets/images/placeholder.svg"
-            alt="Soft blue gradient placeholder block representing a hero image"
-            width="800"
-            height="450"
-            loading="lazy"
-            decoding="async"
-          />
-          <figcaption class="content-figure__caption">
-            Placeholder asset in <code>assets/images/</code>; swap for real art with <code>srcset</code>.
-          </figcaption>
-        </figure>
+        </div>
       </section>
 
-      <section id="contact" class="site-main__section" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Sample form</h2>
+      <section id="about" class="section site-main__section" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="section__title">About</h2>
+        <p class="section__lead">
+          I am a dedicated mechanical engineer with a strong mix of project management, design, development,
+          and quality assurance. I focus on clear CAD-backed documentation, tolerances, and stakeholder
+          communication so builds stay on track.
+        </p>
+        <p>
+          As a Junior Project Engineer, I help align scope, suppliers, and schedules. I care about detailed
+          technical drawings, risk-aware decisions, and practical improvements to design and manufacturing
+          efficiency.
+        </p>
+        <h3 class="u-visually-hidden">Professional skills</h3>
+        <ul class="skill-list">
+          <li class="skill-list__item">CAD &amp; mechanical design</li>
+          <li class="skill-list__item">DFM / assembly</li>
+          <li class="skill-list__item">Project coordination</li>
+          <li class="skill-list__item">Documentation</li>
+          <li class="skill-list__item">Supplier engagement</li>
+        </ul>
+      </section>
+
+      <section id="experience" class="section site-main__section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section__title">Work experience</h2>
+        <p class="section__lead">
+          Roles and employers in reverse chronological order (most recent first). Dates match my CV summary;
+          adjust here when your timeline changes.
+        </p>
+        <ol class="experience-list">
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-1">
+              <p class="experience-item__period">
+                <time datetime="2025-10">Oct 2025</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <span class="experience-item__end">Present</span>
+              </p>
+              <h3 id="exp-role-1" class="experience-item__role">Junior Project Engineer</h3>
+              <p class="experience-item__company">
+                Product Development &amp; Technology Station (PDTS), Central University of Technology (CUT)
+              </p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-2">
+              <p class="experience-item__period">
+                <time datetime="2025-03">Mar 2025</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2025-09">Sep 2025</time>
+              </p>
+              <h3 id="exp-role-2" class="experience-item__role">Design Engineer &amp; project management</h3>
+              <p class="experience-item__company">DDJ Group (PTY) Ltd</p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-3">
+              <p class="experience-item__period">
+                <time datetime="2024-09">Sep 2024</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2025-02">Feb 2025</time>
+              </p>
+              <h3 id="exp-role-3" class="experience-item__role">Drill site manager</h3>
+              <p class="experience-item__company">DDJ Group (PTY) Ltd</p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-4">
+              <p class="experience-item__period">
+                <time datetime="2019-11">Nov 2019</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2024-09">Sep 2024</time>
+              </p>
+              <h3 id="exp-role-4" class="experience-item__role">Mechanical design engineer</h3>
+              <p class="experience-item__company">Carousel Engineering (PTY) Ltd</p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-5">
+              <p class="experience-item__period">
+                <time datetime="2018-01">Jan 2018</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2018-12">Dec 2018</time>
+              </p>
+              <h3 id="exp-role-5" class="experience-item__role">Practical student year</h3>
+              <p class="experience-item__company">Product Development Technology Station</p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-6">
+              <p class="experience-item__period">
+                <time datetime="2017-01">Jan 2017</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2017-12">Dec 2017</time>
+              </p>
+              <h3 id="exp-role-6" class="experience-item__role">Voluntary student work</h3>
+              <p class="experience-item__company">Product Development Technology Station (PDTS)</p>
+              <p class="experience-item__location">Bloemfontein, South Africa</p>
+            </article>
+          </li>
+          <li class="experience-list__item">
+            <article class="experience-item" aria-labelledby="exp-role-7">
+              <p class="experience-item__period">
+                <time datetime="2015-11">Nov 2015</time>
+                <span class="experience-item__sep" aria-hidden="true">–</span>
+                <time datetime="2015-12">Dec 2015</time>
+              </p>
+              <h3 id="exp-role-7" class="experience-item__role">Casual worker</h3>
+              <p class="experience-item__company">Charlene&apos;s Materials</p>
+              <p class="experience-item__location">Oudtshoorn, South Africa</p>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="projects" class="section site-main__section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section__title">Projects</h2>
+        <p class="section__lead">
+          A mix of engineering work samples and personal builds. Filter by category; thumbnails and icons are
+          driven by <code>data/projects.json</code> so you can add entries without duplicating markup.
+        </p>
+        <div id="projects-root" class="project-root">
+          <div
+            id="project-filters"
+            class="project-filters"
+            role="group"
+            aria-label="Filter projects by category"
+          ></div>
+          <div id="projects-grid" class="project-grid">
+            <p class="project-grid__status" id="projects-loading">Loading projects…</p>
+          </div>
+        </div>
+        <noscript>
+          <p class="project-grid__status">
+            Enable JavaScript to load the interactive project grid from <code>data/projects.json</code>.
+          </p>
+        </noscript>
+      </section>
+
+      <section id="interests" class="section site-main__section" aria-labelledby="interests-heading">
+        <h2 id="interests-heading" class="section__title">Beyond the day job</h2>
+        <p class="section__lead">
+          Personal interests—not part of my formal role description—that keep me curious and hands-on.
+        </p>
+        <div class="interests">
+          <ul class="interests__grid">
+            <li class="interests__item">
+              <div class="interests__card">
+                <img
+                  class="interests__icon"
+                  src="assets/icons/interest-gaming.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  decoding="async"
+                />
+                <h3 class="interests__name">Gaming</h3>
+                <p class="interests__text">
+                  Playing and tinkering with game feel, UI feedback, and small interactive prototypes.
+                </p>
+              </div>
+            </li>
+            <li class="interests__item">
+              <div class="interests__card">
+                <img
+                  class="interests__icon"
+                  src="assets/icons/interest-code.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  decoding="async"
+                />
+                <h3 class="interests__name">Coding</h3>
+                <p class="interests__text">
+                  App and web development experiments—structured markup, accessible components, and pragmatic
+                  tooling.
+                </p>
+              </div>
+            </li>
+            <li class="interests__item">
+              <div class="interests__card">
+                <img
+                  class="interests__icon"
+                  src="assets/icons/interest-robotics.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  decoding="async"
+                />
+                <h3 class="interests__name">Electronics &amp; robotics</h3>
+                <p class="interests__text">
+                  Microcontrollers, sensors, and simple mechatronics projects that bridge hardware and
+                  software.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section site-main__section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section__title">Contact</h2>
+        <p class="section__lead">
+          Email and LinkedIn from my CV; add or remove links as you like.
+        </p>
+        <ul class="social-links">
+          <li>
+            <a class="social-links__link" href="mailto:rassieadendorff@outlook.com">rassieadendorff@outlook.com</a>
+          </li>
+          <li>
+            <a
+              class="social-links__link"
+              href="https://www.linkedin.com/in/erasmus-adendorff-8a0968124/"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a class="social-links__link" href="https://github.com/" rel="noopener noreferrer">GitHub</a>
+          </li>
+        </ul>
         <form class="sample-form" action="#" method="get" aria-labelledby="contact-heading">
           <p class="sample-form__field">
             <label class="sample-form__label" for="email">Email</label>
@@ -106,15 +323,25 @@
             <button class="sample-form__submit" type="submit">Send</button>
           </p>
         </form>
+        <p class="section__hint">
+          Tip: wire this form to a backend or service; keep labels, errors, and focus management accessible.
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p class="site-footer__text">© <span id="year"></span> My site. All rights reserved.</p>
+        <p class="site-footer__text">© <span id="year"></span> Erasmus Adendorff. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a class="footer-nav__link" href="#hero">Back to top</a></li>
+          <li><a class="footer-nav__link" href="#experience">Experience</a></li>
+          <li><a class="footer-nav__link" href="#projects">Projects</a></li>
+          <li><a class="footer-nav__link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </footer>
 
+    <script src="js/projects.js" defer></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>

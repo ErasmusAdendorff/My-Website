@@ -31,8 +31,11 @@
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   background: var(--color-surface);
-  border-bottom: 1px solid rgb(0 0 0 / 0.08);
+  border-bottom: 1px solid var(--color-border-light);
   box-shadow: var(--shadow-sm);
 }
 
@@ -101,14 +104,14 @@
 
 .site-nav__link:hover {
   color: var(--color-accent);
-  background: rgb(37 99 235 / 0.08);
+  background: var(--color-brand-primary-soft);
 }
 
 .site-footer {
   margin-top: auto;
   padding: var(--space-lg) clamp(var(--space-md), 4vw, var(--space-2xl));
   background: var(--color-surface);
-  border-top: 1px solid rgb(0 0 0 / 0.08);
+  border-top: 1px solid var(--color-border-light);
 }
 
 .site-footer__inner {
@@ -163,7 +166,7 @@
   font: inherit;
   color: var(--color-text);
   background: var(--color-surface);
-  border: 1px solid rgb(0 0 0 / 0.15);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-sm);
 }
 

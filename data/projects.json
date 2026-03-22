@@ -1,0 +1,71 @@
+{
+  "filters": [
+    { "id": "all", "label": "All" },
+    { "id": "engineering", "label": "Engineering" },
+    { "id": "code", "label": "Code" },
+    { "id": "gaming", "label": "Gaming" },
+    { "id": "electronics", "label": "Electronics" }
+  ],
+  "projects": [
+    {
+      "id": "fixture-stackup",
+      "title": "Production fixture tolerance stack-up",
+      "summary": "Mechanical stack-up and documentation supporting manufacturing readiness on the shop floor.",
+      "category": "engineering",
+      "categoryLabel": "Engineering",
+      "image": "assets/images/projects/project-engineering.svg",
+      "imageAlt": "Diagram-style illustration for an engineering project thumbnail",
+      "icon": "assets/icons/category-engineering.svg",
+      "href": "#",
+      "featured": true
+    },
+    {
+      "id": "project-schedule",
+      "title": "Cross-functional project schedule",
+      "summary": "Milestone tracking with suppliers and internal stakeholders for a capital equipment rollout.",
+      "category": "engineering",
+      "categoryLabel": "Engineering",
+      "image": "assets/images/projects/project-engineering.svg",
+      "imageAlt": "Diagram-style illustration for an engineering project thumbnail",
+      "icon": "assets/icons/category-engineering.svg",
+      "href": "#",
+      "featured": true
+    },
+    {
+      "id": "portfolio-site",
+      "title": "Personal profile website",
+      "summary": "Semantic HTML, accessible components, and a data-driven project grid built without a framework.",
+      "category": "code",
+      "categoryLabel": "Code",
+      "image": "assets/images/projects/project-code.svg",
+      "imageAlt": "Dark panel with code brackets for a software project thumbnail",
+      "icon": "assets/icons/category-code.svg",
+      "href": "#",
+      "featured": false
+    },
+    {
+      "id": "game-jam-ui",
+      "title": "Game jam UI prototype",
+      "summary": "Rapid UI iteration for a small game concept—layout, feedback states, and controller-friendly focus.",
+      "category": "gaming",
+      "categoryLabel": "Gaming",
+      "image": "assets/images/projects/project-gaming.svg",
+      "imageAlt": "Stylized game controller graphic for a gaming project thumbnail",
+      "icon": "assets/icons/category-gaming.svg",
+      "href": "#",
+      "featured": false
+    },
+    {
+      "id": "sensor-mcu",
+      "title": "Sensor readout on MCU",
+      "summary": "Microcontroller firmware experiment reading an analog sensor with filtered values over serial.",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "image": "assets/images/projects/project-electronics.svg",
+      "imageAlt": "Circuit board style graphic for an electronics project thumbnail",
+      "icon": "assets/icons/category-electronics.svg",
+      "href": "#",
+      "featured": false
+    }
+  ]
+}

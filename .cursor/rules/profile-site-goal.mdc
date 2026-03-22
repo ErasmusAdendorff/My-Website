@@ -1,0 +1,15 @@
+---
+description: North star for this repo — public professional profile site (mechanical engineer / JPE)
+globs: **/*.{html,css,js,json}
+alwaysApply: true
+---
+
+# Profile site goal
+
+- **Purpose**: A single-page **public professional profile** for employers, collaborators, and peers—not a generic template demo.
+- **Positioning**: Visitor should immediately see **Mechanical engineer** and **Junior Project Engineer**; body copy stays credible and manufacturing-project oriented.
+- **Work experience**: Curated in `index.html` as an ordered timeline (`#experience`): period (`<time>` start/end or “Present”), **role** (`h3`), **company**, and **location**. Keep reverse-chronological order; omit bullet responsibility lists here (those belong in a full CV or project case studies).
+- **Projects**: The **Projects** area is **data-driven** from `data/projects.json` and rendered by `js/projects.js`. Adding or editing entries should not require duplicating card HTML. Keep thumbnails under `assets/images/projects/` and icons under `assets/icons/`. Preserve meaningful `imageAlt` per project.
+- **Interests**: **Beyond the day job** (gaming, coding, electronics/robotics) is **personal**—do not phrase it as formal job responsibilities.
+- **Brand palette**: Primary **#317a90**, secondary **#7f8c8f**—express via CSS variables in `css/tokens.css`, not hard-coded one-off colors.
+- **Quality bar**: Semantic landmarks, heading order, `:focus-visible`, mobile-first layout, BEM-style classes, and touch-friendly controls (~44px) stay non-negotiable when extending the site.
